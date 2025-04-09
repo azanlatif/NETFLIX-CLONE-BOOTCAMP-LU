@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: black;
+}
+
+/* .netflixMain {
+  width: 100vw;
+} */
+
+.NetflixContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.backgroundImage {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,         /* Full black at bottom */
+      rgba(0, 0, 0, 0.7) 30%,      /* Still mostly black */
+      rgba(210, 42, 78, 0.2) 100%  /* Light pink at top */
+    ),
+    url("backgroundImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  width: 100vw;
+  height: 110vh;
+  position: relative;
+  filter: blur(2rem);
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.navbarLeftSide {
+  width: 50%;
+}
+
+.logoImage {
+  width: clamp(4rem, 35vw, 11.4rem);
+  margin-left: 1.5rem;
+  color: red;
+}
+.navbarRightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  padding: 0 2.5rem;
+}
+
+.signButton {
+  border: none;
+  background-color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+}
+
+.NetflixContainer {
+  height: 90vh;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+.bannerSection {
+  width: 100%;
+  height: 100%;
+  border: 2.5px solid rgb(49, 49, 49);
+  border-radius: 1.5rem;
+  background-image: url(backgroundImage.jpg);
+  background-size: 100% 100%;
+  margin: 0.6rem 0;
+  position: relative;
+}
+
+.bannerOverlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    rgba(1, 1, 1, 0.388),
+    rgb(0, 0, 0),
+    rgb(33, 33, 33)
+  );
+  position: absolute;
+  opacity: 0.95;
+  border-radius: 1.5rem;
+  top: 0;
+}
+
+.textContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.Fronttext {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+}
+.Fronttext h1 {
+  font-size: 3.5rem;
+  width: 60%;
+}
+.Fronttext h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.Fronttext p {
+  font-weight: 100;
+}
+
+.LoginSection {
+  display: flex;
+  gap: 1rem;
+  margin: 0.6rem 0;
+}
+.inputBox {
+  border: none;
+  border-radius: 1rem;
+  width: 15rem;
+  padding: 0.6rem;
+}
+
+.getStarted {
+  border: none;
+  padding: 0.6rem 1.3rem;
+  background-color: red;
+  color: white;
+  border-radius: 1rem;
+}
+
+.trendingSection,.reasonToJoinSection, .faqSection{
+  margin: 2rem auto;
+  color: white;
+  width: 95vw;
+  font-weight: 900;
+
+}
+.trendingSection h2, .reasonToJoinSection h2, .faqSection h2 {
+  margin: 1rem 0 1rem 4.2rem; 
+  font-size: 2rem; 
+}
+
+.CardContainer{
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+ 
+}
+.carditems{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  
+}
+.carditems img{
+  width: 65%;
+  border-radius: 1rem;
+}
+.carditems h2{
+  position: absolute;
+  font-size: clamp(4rem, 4vw + 1rem, 4.6rem);
+  top: 0rem;
+  left: -52px;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.ReasonContainer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reasonCard {
+  margin-top: 1rem;
+  width: 23%;
+  height: 35vh;
+  border: 2px solid rgba(96, 96, 96, 0.251);
+  border-radius: 1rem;
+  text-align: left;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cardupperPart p {
+  font-size: .8rem;
+  font-weight: 100;
+  padding: .6rem 0;
+}
+
+.cardLowerPart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.faqContainer{
+  width: 89%;
+  margin: 2rem auto;
+
+}
+.faqBox{
+  border: 2px solid rgba(255, 255, 255, 0.151);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.4rem 1rem;
+  border-radius: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .4rem auto;
+}
+
+.faqQuestion{
+ font-size: 1rem;
+ font-weight: 100;
+}
+.plusicon{
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.GetStartedSection{
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+
+.GetStartedSection p{
+  text-align: center;
+}
+.LoginSection2{
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.LoginSection2 input, .LoginSection2 button{
+  width: 40%;
+
+}
+.footer{
+  width: 85%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.498);
+  font-size: .8rem;
+}
+
+.footer p{
+  text-decoration: underline;
+}
+
+.footerGrid{
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: .6rem;
+  text-decoration: underline;
+}
+
+.footerEnd{
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.089);
+  padding: 1rem;
+
+}
+.DeeveloperCredit span{
+  color: red;
+  text-decoration: underline;
+  
+}

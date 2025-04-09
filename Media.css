@@ -1,0 +1,100 @@
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .Fronttext h1 {
+    font-size: 2.8rem;
+  }
+  .Fronttext h4 {
+    font-size: 1rem;
+  }
+  .Fronttext p {
+    width: 80%;
+  }
+  .LoginSection {
+    flex-direction: column;
+  }
+
+  .CardContainer {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .carditems {
+    width: 40%;
+    justify-content: space-around;
+  }
+  .carditem5 {
+    display: none;
+  }
+  .carditems img {
+    width: 80%;
+  }
+  
+
+  .carditems h2 {
+    top: 0rem;
+    left: -72px;
+  }
+
+  .carditems{
+    margin: 0 1.2rem;
+  }
+  .bannerSection {
+    background-size: 100% 50%;
+  }
+  .trendingSection h2 {
+    text-align: center;
+  }
+  .trendingSection{
+    justify-content: space-around;
+  }
+
+
+  .reasonCard {
+    width: 48%; /* Two cards per row */
+  }
+  .footerGrid{
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .LoginSection2 input,.LoginSection2 button{
+    width: 80%;
+    margin: auto;
+  }
+  .reasonToJoinSection h2,
+  .faqSection h2{
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .reasonCard {
+    width: 70%; /* Two cards per row */
+  }
+  .carditems h2 {
+   font-size: 3rem;
+   top: 0rem;
+   left: -62px;
+  }
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your CSS here */
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your CSS here */
+}
+
+/* Extra large devices (large desktops, ≥1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your CSS here */
+}
+
+/* XXL devices (extra large screens, ≥1400px) */
+@media (min-width: 1400px) {
+  /* Your CSS here */
+}
